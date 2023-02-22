@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: open-sans;
+    src: url(../fonts/OpenSans-Regular.woff2) format("woff2"),
+         url(../fonts/OpenSans-Regular.woff) format("woff"),
+         url(../fonts/OpenSans-Regular.ttf) format("ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: open-sans;
+    src: url(../fonts/OpenSans-Bold.woff2) format("woff2"),
+         url(../fonts/OpenSans-Bold.woff) format("woff"),
+         url(../fonts/OpenSans-Bold.ttf) format("ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: open-sans, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.2;
+}
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.title {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.header {
+    height: 100vh;
+    background-image: url(../img/banner-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: #666666;
+    position: relative;
+    z-index: 1;
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right:0;
+    bottom:0;
+    left:0;
+    background-color: #000000;
+    opacity: 0.6;  
+    z-index: -1; 
+  }
+
+.header-wrapper {
+    padding: 0 15px;
+}
+
+.header-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-link-img {
+    height: 60px;
+}
+
+.intro-title {
+    color: #ffffff;    
+    text-align: center;
+    font-size: 24px;
+    margin-top: 42px;
+}
+
+.page {
+    padding: 0 15px;
+}
+
+.trends-title {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 44px;
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.trends-title::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 66px;
+    background-color: #e1d9bd;
+    top: 25px;
+    left: calc(50% - 33px)
+}
+
+.trend {
+    background-color: #666666;
+    background-image: url(../img/trend1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 230px;
+    position: relative;
+    z-index: 1; 
+    
+}
+
+.trend::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right:0;
+    bottom:0;
+    left:0;
+    background-color: #000000;
+    opacity: 0.6;  
+    z-index: -1; 
+}
+
+.trend-text {
+    padding: 30px 20px;
+    border: 3px solid #7a6f3c;
+}
+
+.trend-tegs {
+    text-decoration: none;
+}
