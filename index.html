@@ -8,6 +8,221 @@
     <title>Mobile first</title>
 </head>
 <body>
-    
+    <header class="header">
+        <div class="header-wrapper">
+            <div class="menu">
+
+            </div>
+            <div class="logo">
+                <a class="logo-link" href="#0"></a>
+            </div>
+            <div class="intro">
+                <h1 class="intro-ttle">Блог о творчестве, спорте, и образе жизни</h1>
+            </div>
+
+        </div>        
+    </header>
+
+    <div class="page">
+        <div class="trends">            
+            <h2 class="trends-title">Сейчас в тренде</h2>
+            
+            <div class="trend">
+                <div class="trend-text">
+                    <ul class="trend-tegs">
+                        <li class="trend-teg-item">
+                            <a class="trend-teg-link" href="#0">lifestyle</a>
+                        </li>
+                        <li class="trend-teg-item">
+                            <a class="trend-teg-link" href="#0">interior</a>
+                        </li>
+                    </ul>
+                    <div class="trend-title">
+                        <a class="trend-title-link" href="#0">сейчас в тренде: сад  на подоконнике</a>
+                    </div>
+                </div>                
+            </div>
+            <!-- Размножить блоки трендов после отладки -->
+        </div>
+
+        <main class="post-list">
+            <article class="news">
+                <picture class="news-main">
+                    <a href="#0">
+                        <img class="news-img" src="" alt="Человек идёт по пляжу">
+                    </a>
+                </picture>
+                <!-- доделать блок picture-->
+
+                <div class="news-text">
+                    <ul class="news-tegs">
+                        <li class="news-item">
+                            <a class="news-item-link" href="#0">travel</a>
+                        </li>
+                        <li class="news-item">
+                            <a class="news-item-link" href="#0">health</a>
+                        </li>
+                    </ul>
+                    <div class="news-title">
+                        <h2 class="news-title-link" >
+                            <a href="#0">10 мест, ради которых стоит проснуться на рассвете</a>
+                        </h2>
+                    </div>
+                    <div class="news-meta">
+                        <time class="date">
+                            10 июня 2019
+                        </time>                        
+                        <a class="author" href="#0">Неизвестный автор</a>
+                    </div>
+                    <div class="news-text-about">
+                        <p>
+                            Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел, запущены фонтаны города… Музеи еще закрыты. Что посмотреть?                            
+                        </p>
+                    </div>
+                </div>
+
+            </article>
+             <!-- Размножить блоки статей после отладки -->
+        </main>
+        
+        <aside class="aside">
+            <section class="side-bar">
+                <h2 class="aside-title">Новые посты</h2>
+
+                <article class="post">
+                    <a class="post-img-link" href="#0">
+                        <img class="post-img" src="" alt="человек идёт по пляжу">                        
+                    </a>  
+                    <div class="post-text">
+                        <time class="date"> 14 июня 2019</time>
+                        <h3 class="post-title">
+                            <a class="post-title-link" href="#0">10 мест, ради которых стоит проснуться</a>
+                        </h3>
+                    </div>                  
+                </article>
+                <!-- Размножить блоки article -->
+
+                <form class="search" action="#">
+                    <label class="search-group">
+                        <span class="visually-hidden">Поле ввода</span>
+                        <input type="text" class="search-field" placeholder="Найти..." alt="поле поиска">
+                    </label>
+                    <span class="visually-hidden">Кнопка поиска</span>
+                    <button class="search-button" alt="кнопка поиска"></button>
+                </form>
+            </section>
+
+            <section class="side-bar">
+                <h2 class="aside-title">рассылка</h2>
+
+                <form class="subscribe" action="#">
+                    <label class="subscribe-group">
+                        <span class="visually-hidden">Поле ввода e-mail</span>
+                        <input type="text" class="subscribe-field" placeholder="Ваш email-адрес"
+                            alt="поле e-mail для рассылки">
+                    </label>
+                    <span class="visually-hidden">Кнопка подписаться</span>
+                    <button class="subscribe-button" alt="кнопка подписаться">подписаться</button>
+                </form>                
+            </section>
+
+            <section class="side-bar">
+                <h2 class="aside-title">теги</h2>
+
+                <ul class="list-tegs">
+                    <li class="list-teg">
+                        <a class="list-teg-link" href="#0">fashion</a>
+                    </li>
+                    <li class="list-teg">
+                        <a class="list-teg-link" href="#0">music</a>
+                    </li>
+                    <li class="list-teg">
+                        <a class="list-teg-link" href="#0">lifestyle</a>
+                    </li>
+                    <li class="list-teg">
+                        <a class="list-teg-link" href="#0">art</a>
+                    </li>
+                    <li class="list-teg">
+                        <a class="list-teg-link" href="#0">interior</a>
+                    </li>
+                    <li class="list-teg">
+                        <a class="list-teg-link" href="#0">travel</a>
+                    </li>
+                    <li class="list-teg">
+                        <a class="list-teg-link" href="#0">food</a>
+                    </li>
+                    <li class="list-teg">
+                        <a class="list-teg-link" href="#0">health</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="side-bar">
+                <h2 class="aside-title">темы</h2>
+
+                <ul class="list-themes">
+                    <li class="list-theme">
+                        <a class="list-theme-link" href="#0">Красота</a><span class="list-theme-count">12</span>
+                    </li>
+                    <li class="list-theme">
+                        <a class="list-theme-link" href="#0">Здоровье</a><span class="list-theme-count">4</span>
+                    </li>
+                    <li class="list-theme">
+                        <a class="list-theme-link" href="#0">Образ жизни</a><span class="list-theme-count">145</span>
+                    </li>
+                    <li class="list-theme">
+                        <a class="list-theme-link" href="#0">Музыка</a><span class="list-theme-count">28</span>
+                    </li>
+                    <li class="list-theme">
+                        <a class="list-theme-link" href="#0">Спорт</a><span class="list-theme-count">62</span>
+                    </li>
+                    <li class="list-theme">
+                        <a class="list-theme-link" href="#0">Йога</a><span class="list-theme-count">8</span>
+                    </li>
+                </ul>
+            </section>
+        </aside>
+        
+        <div class="shop">
+            <h2 class="shop-title">наши изделия</h2>
+            
+            <div class="product">
+                <picture class="product-img">
+
+                </picture>
+                <div class="product-text">
+                    <h3 class="product-title">Подушки на диван</h3>
+                    <div class="product-description">
+                        <p>
+                            Набор из двух подушек с модными принтами. Видео о создании aздесь.
+                        </p>
+                    </div>
+                    <div class="product-footer">                        
+                        <div class="product-price">
+                            <span class="price-old">1000</span>
+                            <span class="price-new">800</span>
+                        </div>
+                        <div class="product-link">
+                            <a href="#0">В магазин</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Размножить product после отладки -->
+
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="social">
+            <a href="" class="social-icon"><img src="" alt="Иконка dribbble"></a>
+            <a href="" class="social-icon"><img src="" alt="Иконка pinterest"></a>
+            <a href="" class="social-icon"><img src="" alt="Иконка tumblr"></a>
+        </div>
+        <div class="copyrights">
+            <a href="#0" class="copyrights-link"> Copyright © 2009–2019 City Blog LLC. </a>
+        </div>
+    </footer>
 </body>
 </html>
