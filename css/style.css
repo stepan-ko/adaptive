@@ -38,6 +38,25 @@ a {
     font-weight: bold;
 }
 
+.title-line {    
+    text-align: center;
+    font-size: 16px;
+    position: relative;
+    margin-bottom: 40px;   
+    margin-top: 44px; 
+}
+
+
+.title-line::before {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 66px;
+    background-color: #e1d9bd;
+    left: calc(50% - 33px);
+    top: 25px;
+}
+
 .header {
     height: 100vh;
     background-image: url(../img/banner-mobile.jpg);
@@ -84,24 +103,6 @@ a {
 
 .page {
     padding: 0 15px;
-}
-
-.trends-title {
-    font-size: 16px;
-    text-align: center;
-    margin-top: 44px;
-    position: relative;
-    margin-bottom: 32px;
-}
-
-.trends-title::before {
-    content: "";
-    position: absolute;
-    height: 3px;
-    width: 66px;
-    background-color: #e1d9bd;
-    top: 25px;
-    left: calc(50% - 33px)
 }
 
 .trend {
@@ -235,7 +236,8 @@ a {
 }
 
 .date {    
-    color: #888888;    
+    color: #888888;   
+    font-size: 12px; 
 }
 
 .author{
@@ -249,7 +251,217 @@ a {
 
 /* ------------------ side-bar ----------------*/
 
-.side-bar {
-    margin-top: 44px;
+
+.post {
+    display: flex;
+    margin-bottom: 20px;
 }
 
+.post-img-link {
+    background-color: #f4f7f6;   
+    width: 70px;
+    height: 70px;
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+.post-img {
+    width: 100%;
+    height: 100%;
+}
+
+.post-title {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+  /* ------------- Форма поиска ----------- */
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  } 
+
+.search {
+    display: flex;    
+    align-items: center;
+    margin-top: 60px;
+  }
+
+  
+.search-button {
+background-color: #b59f5b;
+width: 47px;
+height: 47px;
+border: 0;
+background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/search.svg");
+background-size: 20px;
+background-position: center center;
+background-repeat: no-repeat;
+}
+
+.search-button:hover {
+background-color: #323232;    
+}
+
+.search-group {
+    flex-grow: 1;
+}
+
+.search-field {
+    height: 45px;
+    padding-left: 18px;
+    background-color: #f4f7f6;
+    border: 0;
+    width: 100%;
+    
+}
+
+.search-field:focus {
+    outline: 1px solid #b59f5b;
+}
+
+.subscribe {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.subscribe-group {
+    width: 100%;
+}
+
+.subscribe-field {
+    height: 45px;
+    padding-left: 18px;
+    background-color: #f4f7f6;
+    border: 0;
+    width: 100%;
+    
+}
+
+.subscribe-field:focus {
+    outline: 1px solid #b59f5b;
+}
+
+.subscribe-button {
+    background-color: #b59f5b;    
+    height: 47px;
+    width: 100%;
+    border: 0;
+    margin-top: 17px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.subscribe-button:hover {
+    background-color: #323232;    
+  }
+
+/* -----------------------------  ТЕГИ  --------------------------*/
+
+.list-tegs {
+    list-style-type: none; 
+}
+
+.list-teg {
+    display: inline-block;  
+}
+
+.list-teg-link {
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 12px;
+    border: 3px solid #eeeeee;  
+    margin-bottom: 4px;
+}
+
+.list-teg-link:hover {  
+    border: 3px solid #b59f5b;  
+}
+ 
+ /* -----------------------------  ТЕМЫ  ------------------------*/
+.list-themes {
+    list-style-type: none; 
+  }
+  
+.list-theme {
+    display: block;
+    align-items: center;
+    height: 45px;
+    padding-top: 11px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.list-theme-link {
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.list-theme-link:hover {  
+    color: #b59f5b;
+}
+
+.list-theme-count {
+    margin-left: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    vertical-align: top;
+    color: #b59f5b;
+}
+
+/*------------------------------ МАГАЗИН ----------------*/
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-picture { 
+    display: block;
+    width: 100%;
+    padding: 0 20px;   
+    object-fit: contain;
+  
+}
+
+.product-picture-img {
+    width: 100%;    
+    background-color: #f4f7f6;
+}
+
+.product-text {
+    padding: 0 20px 30px;
+    border: 3px solid #d3c59d;
+    
+}
+
+
+.product-title {
+    font-size: 17px;
+    margin-top: 25px;
+    
+}
+
+.product-description {
+    font-size: 15px;
+}
+
+.product-footer {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+}

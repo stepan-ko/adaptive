@@ -28,7 +28,7 @@
 
     <section>
         <div class="trends">            
-            <h2 class="trends-title title">Сейчас в тренде</h2>
+            <h2 class="title-line title">Сейчас в тренде</h2>
             
             <div class="trend">
                 <div class="trend-text">
@@ -132,16 +132,28 @@
         
         <aside class="aside">
             <section class="side-bar">
-                <h2 class="aside-title title">Новые посты</h2>
+                <h2 class="title-line title">Новые посты</h2>
 
                 <article class="post">
-                    <a class="post-img-link" href="#0">
-                        <img class="post-img" src="" alt="человек идёт по пляжу">                        
-                    </a>  
+                    <div class="post-img-link" href="#0">
+                        <img class="post-img" src="./img/last-post1.jpg" alt="человек идёт по пляжу">                        
+                    </div>  
                     <div class="post-text">
                         <time class="date"> 14 июня 2019</time>
                         <h3 class="post-title title">
                             <a class="post-title-link" href="#0">10 мест, ради которых стоит проснуться</a>
+                        </h3>
+                    </div>                  
+                </article>
+
+                <article class="post">
+                    <div class="post-img-link" href="#0">
+                        <img class="post-img" src="./img/last-post2.jpg" alt="человек идёт по пляжу">                        
+                    </div>  
+                    <div class="post-text">
+                        <time class="date"> 14 июня 2019</time>
+                        <h3 class="post-title title">
+                            <a class="post-title-link" href="#0">Йога для домашних</a>
                         </h3>
                     </div>                  
                 </article>
@@ -158,7 +170,7 @@
             </section>
 
             <section class="side-bar">
-                <h2 class="aside-title">рассылка</h2>
+                <h2 class="title-line  title">рассылка</h2>
 
                 <form class="subscribe" action="#">
                     <label class="subscribe-group">
@@ -172,7 +184,7 @@
             </section>
 
             <section class="side-bar">
-                <h2 class="aside-title">теги</h2>
+                <h2 class="title-line title">теги</h2>
 
                 <ul class="list-tegs">
                     <li class="list-teg">
@@ -203,7 +215,7 @@
             </section>
 
             <section class="side-bar">
-                <h2 class="aside-title">темы</h2>
+                <h2 class="title-line title">темы</h2>
 
                 <ul class="list-themes">
                     <li class="list-theme">
@@ -229,14 +241,21 @@
         </aside>
         
         <div class="shop">
-            <h2 class="shop-title">наши изделия</h2>
+            <h2 class="title-line title">наши изделия</h2>
             
             <div class="product">
-                <picture class="product-img">
 
-                </picture>
+                
+                    <picture class="product-picture">
+                        <source srcset="./img/shop-item-mobile1.jpg" media="(max-width: 640px)">
+                        <source srcset="./img/shop-item-table.jpg" media="(min-width: 641px)">
+                        <source srcset="./img/shop-item-des.jpg" media="(min-width: 1025px)">
+                        <img class="product-picture-img" src="./img/shop-item-mobile1.jpg" alt="Подушка на диван">
+                    </picture>                    
+                
+                
                 <div class="product-text">
-                    <h3 class="product-title">Подушки на диван</h3>
+                    <h3 class="product-title title">Подушки на диван</h3>
                     <div class="product-description">
                         <p>
                             Набор из двух подушек с модными принтами. Видео о создании aздесь.
