@@ -465,3 +465,36 @@ background-color: #323232;
     display: flex;
     justify-content: space-between;
 }
+
+
+/* -----------  FOOTER  ---------------*/
+
+.footer { 
+    padding: 0 15px;
+    margin-top: 42px;
+  }
+  
+  .social {
+    background-color: #f4f7f6;
+    height: 83px; 
+    display: flex;      
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social-icon {
+    display: block;
+    width: 20px;
+    margin: 0 15px;
+  }
+
+  .copyrights {
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .copyrights-link {
+    color: #999999;
+  }
