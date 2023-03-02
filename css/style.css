@@ -57,6 +57,8 @@ a {
     top: 25px;
 }
 
+
+
 .header {
     height: 100vh;
     background-image: url(../img/banner-mobile.jpg);
@@ -81,14 +83,39 @@ a {
   }
 
 .header-wrapper {
-    padding: 0 15px;
+    padding: 33px 15px 0;
+    
 }
 
 .header-menu {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
+
+.menu-mobile {
+    width: 24px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: end;
+}
+
+.menu-mobile > span {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff
+
+}
+
+.menu-logo {
+    margin-top: calc(37vh - 60px);
+}
+
 
 .logo-link-img {
     height: 60px;
@@ -428,12 +455,12 @@ background-color: #323232;
 .product {
     display: flex;
     flex-wrap: wrap;
+    padding: 0 30px;
 }
 
 .product-picture { 
     display: block;
-    width: 100%;
-    padding: 0 20px;   
+    width: 100%;      
     object-fit: contain;
   
 }
@@ -444,9 +471,9 @@ background-color: #323232;
 }
 
 .product-text {
-    padding: 0 20px 30px;
-    border: 3px solid #d3c59d;
     
+    outline: 3px solid #d3c59d;
+    outline-offset: 25px;
 }
 
 
@@ -464,7 +491,60 @@ background-color: #323232;
     margin-top: 24px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
+
+.product-button {
+    display: flex;
+    background-color: #b59f5b;
+    width: 138px;    
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;   
+}
+
+.product-button:hover {
+    background-color: #323232;
+}
+
+.product-price {
+    flex-shrink: 0;
+}
+
+.price-old {
+    display: block;
+    font-weight: bold;
+    text-decoration: line-through;
+}
+
+.price-new {
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* -----------  Знак Рубля---------------*/
+.rub {
+    position: relative;
+}
+
+.rub::after {
+    content: "";
+    position: absolute;
+    width: 0.4em;
+    height: 0.1em;
+    background-color: #000000;
+    top: 0.85em;
+    right: 0.2em;
+}
+
+.rub::before {
+   content: " ";
+}
+
 
 
 /* -----------  FOOTER  ---------------*/
