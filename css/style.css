@@ -28,9 +28,14 @@ body {
     font-size: 14px;
     line-height: 1.2;
 }
+
 a {
     text-decoration: none;
     color: #000000;
+}
+
+p {   
+    margin-block-end: 0.71em;
 }
 
 .title {
@@ -133,8 +138,7 @@ a {
 }
 
 .trend {
-    background-color: #666666;
-    background-image: url(../img/trend1.jpg);
+    background-color: #666666;    
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -143,6 +147,7 @@ a {
     z-index: 1; 
     display: flex;    
     align-items: flex-end;
+    margin-top: 3px;
 }
 
 .trend::after {
@@ -155,6 +160,22 @@ a {
     background-color: #000000;
     opacity: 0.6;  
     z-index: -1; 
+}
+
+.trend-1 {
+    background-image: url(../img/trend1.jpg);
+}
+
+.trend-2 {
+    background-image: url(../img/trend2.jpg);
+}
+
+.trend-3 {
+    background-image: url(../img/trend3.jpg);
+}
+
+.trend-4 {
+    background-image: url(../img/trend4.jpg);
 }
 
 .trend-text {
@@ -205,23 +226,34 @@ a {
     
 }
 
-.news {   
+.news {
+    margin-bottom: 20px;
+    margin-top: 44px; 
     position: relative;
 }
 
-.news-picture {
-    margin-top: 40px; 
+
+
+.news-line {
+    margin-top: 60px;
+}
+
+.news-line:before {
+   content: "";
+   width: 100%;
+   height: 3px;
+   background-color: #eeeeee;
+   position: absolute;
+   top: -38px;
    
 }
 
-.news-line {   
-    width: 100%;
-    height: 3px;
-    background-color: #dfdacd;    
-}
+
 
 .news-img {
-    width: 100%;
+   display: block;
+   background-color: #eff6f1;
+   height: 254px;
 }
 
 .news-text {
