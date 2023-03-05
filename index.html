@@ -28,8 +28,9 @@
         </div>        
     </header>
     
-    <section class="trends">            
-        <h2 class="title-line title">Сейчас в тренде</h2>
+    <h2 class="title-line title">Сейчас в тренде</h2>
+
+    <section class="trends"> 
         
         <div class="trend trend-1">
             <div class="trend-text">
@@ -423,15 +424,13 @@
             <h2 class="title-line title">наши изделия</h2>
             
             <div class="product">
-
                 
                     <picture class="product-picture">
                         <source srcset="./img/shop-item-mobile1.jpg" media="(max-width: 640px)">
                         <source srcset="./img/shop-item-tableе1.jpg" media="(min-width: 641px)">
                         <source srcset="./img/shop-item-desk1.jpg" media="(min-width: 1200px)">
                         <img class="product-picture-img" src="./img/shop-item-desk1.jpg" alt="Подушка на диван">
-                    </picture>                    
-                
+                    </picture>   
                 
                 <div class="product-text">
                     <h3 class="product-title title">Подушки на диван</h3>
@@ -451,7 +450,62 @@
                     </div>
                 </div>
             </div>
-            <!-- Размножить product после отладки -->
+
+            <div class="product">
+                
+                <picture class="product-picture">
+                    <source srcset="./img/shop-item-mobile2.jpg" media="(max-width: 640px)">
+                    <source srcset="./img/shop-item-tableе2.jpg" media="(min-width: 641px)">
+                    <source srcset="./img/shop-item-desk2.jpg" media="(min-width: 1200px)">
+                    <img class="product-picture-img" src="./img/shop-item-desk2.jpg" alt="Подушка на диван">
+                </picture> 
+            
+            <div class="product-text">
+                <h3 class="product-title title">Подушки на диван</h3>
+                <div class="product-description">
+                    <p>
+                        Набор из двух подушек с модными принтами. Видео о создании aздесь.
+                    </p>
+                </div>
+                <div class="product-footer">                        
+                    <div class="product-price">
+                        <div class="price-old">1000<span class="rub">Р</span></div>
+                        <div class="price-new">800<span class="rub">Р</span></div>
+                    </div>
+                    
+                    <a class="product-button" href="#0">В магазин</a>
+                    
+                </div>
+            </div>
+            </div>
+
+            <div class="product">
+                        
+                    <picture class="product-picture">
+                        <source srcset="./img/shop-item-mobile3.jpg" media="(max-width: 640px)">
+                        <source srcset="./img/shop-item-tableе3.jpg" media="(min-width: 641px)">
+                        <source srcset="./img/shop-item-desk3.jpg" media="(min-width: 1200px)">
+                        <img class="product-picture-img" src="./img/shop-item-desk3.jpg" alt="Подушка на диван">
+                    </picture>   
+                
+                <div class="product-text">
+                    <h3 class="product-title title">Подушки на диван</h3>
+                    <div class="product-description">
+                        <p>
+                            Набор из двух подушек с модными принтами. Видео о создании aздесь.
+                        </p>
+                    </div>
+                    <div class="product-footer">                        
+                        <div class="product-price">
+                            <div class="price-old">1000<span class="rub">Р</span></div>
+                            <div class="price-new">800<span class="rub">Р</span></div>
+                        </div>
+                        
+                        <a class="product-button" href="#0">В магазин</a>
+                        
+                    </div>
+                </div>
+            </div>
 
         </div>
 
@@ -469,10 +523,12 @@
     </footer>
 
 <!-- Модальное окно-->
-<div class="popup" style="display: none;">
+<div class="popup _hidden">
     <div class="popup-window">
         <div class="popup-close"></div>
-        <div class="popup-message"></div>
+        <div class="popup-message">
+            <h3 class="popup-title title-line title">Ваш фидбек</h3>
+        </div>
     </div>
 </div>
 
