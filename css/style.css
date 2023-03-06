@@ -776,3 +776,29 @@ background-color: #323232;
 .form-button:hover {
     background-color: #323232;
 }
+
+
+/* -------------------  TABLET  ------------------*/
+
+@media (max-width: 640px) and (orientation: landscape) {
+    .trends {
+        display: flex;
+        flex-wrap: wrap;
+    }
+   
+    .trend {
+        width: 50%;
+    }
+}
+
+@media (min-width: 641px) {
+
+    .trend {
+        width: 50%;
+    }
+
+
+
+
+
+}
