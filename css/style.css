@@ -789,16 +789,18 @@ background-color: #323232;
     .trend {
         width: 50%;
     }
+   
 }
 
 @media (min-width: 641px) {
-
+    .trends {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
     .trend {
         width: 50%;
     }
 
-
-
-
-
+    
 }
