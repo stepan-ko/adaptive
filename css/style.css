@@ -786,7 +786,7 @@ p {
 }
 
 @media (min-width: 641px) {
-
+    
     .trends {
         display: flex;
         flex-wrap: wrap;
@@ -798,6 +798,18 @@ p {
 
     .trend:nth-child(even) {
         margin-right: 3px;
+    }
+
+    @media (orientation: landscape) {       
+        .trends>.trend {
+            height: 320px;
+            width: calc(25% - 3px);
+            margin: 0 0 0 0;
+        }
+    
+        .trend:nth-child(n+3) {
+            margin-left: 3px;
+        }        
     }
 
     .header {
