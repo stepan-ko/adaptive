@@ -51,7 +51,6 @@ p {
     margin-top: 44px;
 }
 
-
 .title-line::before {
     content: "";
     position: absolute;
@@ -121,7 +120,6 @@ p {
 .menu-logo {
     margin-top: calc(37vh - 60px);
 }
-
 
 .logo-link-img {
     height: 60px;
@@ -235,8 +233,6 @@ p {
     position: relative;
 }
 
-
-
 .news-line {
     margin-top: 60px;
 }
@@ -250,8 +246,6 @@ p {
     top: -38px;
 
 }
-
-
 
 .news-img {
     display: block;
@@ -313,7 +307,6 @@ p {
 
 /* ------------------ side-bar ----------------*/
 
-
 .post {
     display: flex;
     margin-bottom: 20px;
@@ -356,7 +349,6 @@ p {
     margin-top: 60px;
 }
 
-
 .search-button {
     background-color: #b59f5b;
     width: 47px;
@@ -382,7 +374,6 @@ p {
     background-color: #f4f7f6;
     border: 0;
     width: 100%;
-
 }
 
 .search-field:focus {
@@ -404,7 +395,6 @@ p {
     background-color: #f4f7f6;
     border: 0;
     width: 100%;
-
 }
 
 .subscribe-field:focus {
@@ -485,16 +475,14 @@ p {
     color: #b59f5b;
 }
 
-/*------------------------------ МАГАЗИН ----------------*/
+/*------------------------------ МАГАЗИН ---------------------------*/
 
 .shop {
     padding: 0 15px;
 }
 
-
 .product {
-    display: flex;
-    /*--- flex-wrap: wrap;*/
+    display: flex;    
     flex-direction: column;
     padding: 0 30px;
 }
@@ -503,7 +491,6 @@ p {
     display: block;
     width: 100%;
     object-fit: contain;
-
 }
 
 .product-picture-img {
@@ -517,11 +504,9 @@ p {
     outline-offset: 25px;
 }
 
-
 .product-title {
     font-size: 17px;
     margin-top: 25px;
-
 }
 
 .product-description {
@@ -568,6 +553,7 @@ p {
 }
 
 /* -----------  Знак Рубля---------------*/
+
 .rub {
     position: relative;
 }
@@ -586,9 +572,7 @@ p {
     content: " ";
 }
 
-
-
-/* -----------  FOOTER  ---------------*/
+/* --------------------  FOOTER  -----------------*/
 
 .footer {
     padding: 0 15px;
@@ -640,7 +624,6 @@ p {
     display: flex;
     flex-direction: column;
     padding: 0 15px;
-
 }
 
 .popup-close {
@@ -705,8 +688,6 @@ p {
 .feedback-group:focus {
     border: 1px solid #e1d9bd;
 }
-
-
 
 .form-text {
     font-size: 13px;
@@ -784,7 +765,6 @@ p {
     background-color: #323232;
 }
 
-
 /* -------------------  TABLET  -------  @media  ------------------*/
 
 @media (max-width: 640px) and (orientation: landscape) {
@@ -820,11 +800,9 @@ p {
         margin-right: 3px;
     }
 
-
     .header {
         height: 390px;
         background-image: url(../img/banner-bg-tablet.jpg);
-
     }
 
     .menu-logo {
@@ -847,12 +825,10 @@ p {
 
     .intro-title {
         max-width: 620px;
-
         font-size: 40px;
         font-weight: bold;
         margin: 0 auto;
         margin-top: 104px;
-
     }
 
     .title-line {
@@ -883,7 +859,6 @@ p {
 
     .aside {
         width: 39%;
-
     }
 
     .shop {
@@ -907,7 +882,6 @@ p {
         flex-grow: 1;
     }
 
-
     .popup-form {
         padding: 0 30px;
         max-width: 390px;
@@ -923,7 +897,6 @@ p {
     }
 
     .menu-desctop {
-
         list-style-type: none;
         display: flex;
     }
@@ -943,15 +916,13 @@ p {
     }
 }
 
-
 /* -------------------  DESCTOP  -------  @media   ------------------*/
 
 @media (min-width: 1200px) {
+    
     .menu-mobile {
         display: none;
     }
-
-
 
     .page,
     .shop,
@@ -978,7 +949,6 @@ p {
     .header {
         height: 450px;
         background-image: url(../img/banner-bg.jpg);
-
     }
 
     .aside {
@@ -1003,7 +973,6 @@ p {
         display: flex;
         width: 760px;
         margin-top: 60px;
-
     }
 
     .news-title {
