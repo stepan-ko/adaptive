@@ -293,6 +293,10 @@ p {
     font-size: 12px;
 }
 
+.author {
+    font-weight: bold;
+}
+
 .date {
     color: #888888;
     font-size: 12px;
