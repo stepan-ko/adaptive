@@ -103,7 +103,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-self: end;
+    align-self: flex-end;
 }
 
 .menu-mobile>span {
@@ -293,7 +293,7 @@ p {
 .news-meta {
     margin-top: 15px;
     display: flex;
-    align-items: end;
+    align-items: flex-end;
     font-size: 12px;
 }
 
