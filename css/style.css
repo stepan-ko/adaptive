@@ -1,3 +1,13 @@
+:root {
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-main: #b59f5b;
+  --color-second: #f4f7f6;
+  --color-btn-hover: #323232;
+  --color-border-gray: #eeeeee;
+  --color-bg: #666666;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -33,7 +43,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #000000;
+  color: var(--color-black);
 }
 
 p {
@@ -71,7 +81,7 @@ p {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-color: #666666;
+  background-color: var(--color-bg);
   position: relative;
   z-index: 1;
 }
@@ -83,7 +93,7 @@ p {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: #000000;
+  background-color: var(--color-black);
   opacity: 0.6;
   z-index: -1;
 }
@@ -120,7 +130,7 @@ p {
   position: relative;
   width: 100%;
   height: 3px;
-  background-color: #ffffff
+  background-color: var(--color-white)
 }
 
 /*----------------------- ЗАГОЛОВОК И ЛОГОТИП -----------------------*/
@@ -134,7 +144,7 @@ p {
 }
 
 .intro-title {
-  color: #ffffff;
+  color: var(--color-white);
   text-align: center;
   font-size: 26px;
   margin-top: 42px;
@@ -144,7 +154,7 @@ p {
 /*----------------------- ТРЕНДЫ -----------------------*/
 
 .trend {
-  background-color: #666666;
+  background-color: var(--color-bg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -163,7 +173,7 @@ p {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: #000000;
+  background-color: var(--color-black);
   opacity: 0.6;
   z-index: -1;
 }
@@ -186,7 +196,7 @@ p {
 
 .trend-text {
   padding: 30px 20px;
-  border: 3px solid #7a6f3c;
+  border: 3px solid var(--color-main);
   margin: 0 15px 15px;
   width: 100%;
 }
@@ -205,7 +215,7 @@ p {
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
-  color: #b59f5b;
+  color: var(--color-main);
 }
 
 .trend-teg-link:hover {
@@ -217,13 +227,13 @@ p {
 }
 
 .trend-title-link {
-  color: #ffffff;
+  color: var(--color-white);
   text-transform: uppercase;
   font-size: 16px;
 }
 
 .trend-title-link:hover {
-  color: #b59f5b;
+  color: var(--color-main);
 }
 
 /* ------------------------------------------------------- */
@@ -248,7 +258,7 @@ p {
   content: "";
   width: 100%;
   height: 3px;
-  background-color: #eeeeee;
+  background-color: var(--color-border-gray);
   position: absolute;
   top: -38px;
 
@@ -274,7 +284,7 @@ p {
 
 .news-item-link {
   text-transform: uppercase;
-  color: #b59f5b;
+  color: var(--color-main);
   margin-right: 20px;
   font-size: 14px;
   font-weight: bold;
@@ -290,7 +300,7 @@ p {
 }
 
 .news-title-link:hover {
-  color: #b59f5b;
+  color: var(--color-main);
 }
 
 .news-meta {
@@ -322,7 +332,7 @@ p {
 }
 
 .post-img-link {
-  background-color: #f4f7f6;
+  background-color: var(--color-second);
   width: 70px;
   height: 70px;
   flex-shrink: 0;
@@ -359,7 +369,7 @@ p {
 }
 
 .search-button {
-  background-color: #b59f5b;
+  background-color: var(--color-main);
   width: 47px;
   height: 47px;
   border: 0;
@@ -370,7 +380,7 @@ p {
 }
 
 .search-button:hover {
-  background-color: #323232;
+  background-color: var(--color-btn-hover);
 }
 
 .search-group {
@@ -380,14 +390,14 @@ p {
 .search-field {
   height: 45px;
   padding-left: 18px;
-  background-color: #f4f7f6;
+  background-color: var(--color-second);
   border: 0;
   width: 100%;
   font-family: open-sans;
 }
 
 .search-field:focus {
-  outline: 1px solid #b59f5b;
+  outline: 1px solid var(--color-main);
 }
 
 /*----------------------- РАССЫЛКА -----------------------*/
@@ -404,30 +414,30 @@ p {
 .subscribe-field {
   height: 45px;
   padding-left: 18px;
-  background-color: #f4f7f6;
+  background-color: var(--color-second);
   border: 0;
   width: 100%;
   font-family: open-sans;
 }
 
 .subscribe-field:focus {
-  outline: 1px solid #b59f5b;
+  outline: 1px solid var(--color-main);
 }
 
 .subscribe-button {
-  background-color: #b59f5b;
+  background-color: var(--color-main);
   height: 47px;
   width: 100%;
   border: 0;
   margin-top: 17px;
-  color: #ffffff;
+  color: var(--color-white);
   font-weight: bold;
   font-size: 14px;
   text-transform: uppercase;
 }
 
 .subscribe-button:hover {
-  background-color: #323232;
+  background-color: var(--color-btn-hover);
 }
 
 /*----------------------- ТЕГИ -----------------------*/
@@ -444,16 +454,16 @@ p {
   display: block;
   text-transform: uppercase;
   text-decoration: none;
-  color: #000000;
+  color: var(--color-black);
   font-size: 12px;
   font-weight: bold;
   padding: 5px 12px;
-  border: 3px solid #eeeeee;
+  border: 3px solid var(--color-border-gray);
   margin-bottom: 4px;
 }
 
 .list-teg-link:hover {
-  border: 3px solid #b59f5b;
+  border: 3px solid var(--color-main);
 }
 
 /* -----------------------------  ТЕМЫ  ------------------------*/
@@ -467,18 +477,18 @@ p {
   align-items: center;
   height: 45px;
   padding-top: 11px;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid var(--color-border-gray);
 }
 
 .list-theme-link {
   text-decoration: none;
-  color: #000000;
+  color: var(--color-black);
   font-size: 14px;
   font-weight: bold;
 }
 
 .list-theme-link:hover {
-  color: #b59f5b;
+  color: var(--color-main);
 }
 
 .list-theme-count {
@@ -486,7 +496,7 @@ p {
   font-size: 12px;
   font-weight: bold;
   vertical-align: top;
-  color: #b59f5b;
+  color: var(--color-main);
 }
 
 /*----------------------- НАШИ ИЗДЕЛИЯ -----------------------*/
@@ -504,12 +514,12 @@ p {
 .product-picture-img {
   min-width: 100%;
   min-height: calc(100vw - 95px);
-  background-color: #f4f7f6;
+  background-color: var(--color-second);
 }
 
 .product-text {
   margin-bottom: 57px;
-  outline: 3px solid #d3c59d;
+  outline: 3px solid var(--color-main);
   outline-offset: 25px;
 }
 
@@ -531,18 +541,18 @@ p {
 
 .product-button {
   display: flex;
-  background-color: #b59f5b;
+  background-color: var(--color-main);
   width: 138px;
   height: 50px;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
+  color: var(--color-white);
   text-transform: uppercase;
   font-weight: bold;
 }
 
 .product-button:hover {
-  background-color: #323232;
+  background-color: var(--color-btn-hover);
 }
 
 .product-price {
@@ -572,7 +582,7 @@ p {
   position: absolute;
   width: 0.4em;
   height: 0.1em;
-  background-color: #000000;
+  background-color: var(--color-black);
   top: 0.86em;
   right: 0.1em;
 }
@@ -589,7 +599,7 @@ p {
 }
 
 .social {
-  background-color: #f4f7f6;
+  background-color: var(--color-second);
   height: 83px;
   display: flex;
   justify-content: center;
@@ -614,10 +624,6 @@ p {
 }
 
 /*----------------------- МОДАЛЬНОЕ ОКНО -----------------------*/
-
-._hidden {
-  display: none;
-}
 
 .popup {
   position: fixed;
@@ -653,7 +659,7 @@ p {
   content: "";
   height: 33px;
   width: 4px;
-  background-color: #ffffff;
+  background-color: var(--color-white);
 }
 
 .popup-close::before {
@@ -665,7 +671,7 @@ p {
 }
 
 .popup-form {
-  background-color: #fff;
+  background-color: var(--color-white);
   padding: 0 20px;
   width: 100%;
   max-width: 330px;
@@ -683,7 +689,7 @@ p {
   margin-bottom: 37px;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background-color: #f4f7f6;
+  background-color: var(--color-second);
   background-image: url("../svg/form-arrows.svg");
   background-repeat: no-repeat;
   background-position: right 15px center;
@@ -740,14 +746,14 @@ p {
 .form-textarea {
   width: 100%;
   height: 130px;
-  background-color: #f4f7f6;
+  background-color: var(--color-second);
   border: none;
 }
 
 .form-textarea {
   width: 100%;
   height: 130px;
-  background-color: #f4f7f6;
+  background-color: var(--color-second);
   padding: 24px 15px 0;
   font-family: open-sans;
   opacity: 0.54;
@@ -761,16 +767,20 @@ p {
 .form-button {
   width: 100%;
   height: 48px;
-  background-color: #b59f5b;
+  background-color: var(--color-main);
   border: none;
-  color: #ffffff;
+  color: var(--color-white);
   text-transform: uppercase;
   font-size: 14px;
   font-weight: bold;
 }
 
 .form-button:hover {
-  background-color: #323232;
+  background-color: var(--color-btn-hover);
+}
+
+._hidden {
+  display: none;
 }
 
 /*----------------------- МЕДИА ЗАПРОСЫ -----------------------*/
@@ -949,7 +959,7 @@ p {
 
   .menu-desctop-link {
     text-transform: uppercase;
-    color: #ffffff;
+    color: var(--color-white);
     font-size: 13px;
   }
 
