@@ -509,13 +509,17 @@ p {
 .product {
   display: flex;
   flex-direction: column;
-  padding: 0 30px;
+  padding: 0 30px;  
+}
+
+.product-picture {
+  background-color: var(--color-second);
 }
 
 .product-picture-img {
   width: 100%;
-  min-height: calc(100vw - 95px);
-  background-color: var(--color-second);
+  min-height: calc(100vw - 95px);   
+  display: block;
 }
 
 .product-text {
@@ -845,13 +849,12 @@ p {
   }
 
   .product-picture {
-    min-height: calc((50vw - 107px)*0.79);
+    min-height: calc((50vw - 110px)*0.79);
   }
 
   .product-picture-img {
     width: 100%;
-    min-height: 100%;
-    object-fit: contain;
+    min-height: 100%;   
   }
 
   .header {
