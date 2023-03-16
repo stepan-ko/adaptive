@@ -60,7 +60,7 @@ p {
   font-size: 16px;
   position: relative;
   margin-bottom: 40px;
-  margin-top: 44px;
+  margin-top: 44px; 
 }
 
 .title-line::before {
@@ -230,6 +230,7 @@ p {
   color: var(--color-white);
   text-transform: uppercase;
   font-size: 16px;
+  font-weight: bold;
 }
 
 .trend-title-link:hover {
@@ -512,7 +513,7 @@ p {
 }
 
 .product-picture-img {
-  min-width: 100%;
+  width: 100%;
   min-height: calc(100vw - 95px);
   background-color: var(--color-second);
 }
@@ -526,6 +527,7 @@ p {
 .product-title {
   font-size: 17px;
   margin-top: 25px;
+  margin-bottom: 5px;
 }
 
 .product-description {
@@ -634,14 +636,17 @@ p {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 5;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; 
+  padding-top: 10px; 
 }
 
 .popup-window {
   display: flex;
   flex-direction: column;
   padding: 0 15px;
+  overflow: scroll;
 }
 
 .popup-close {
@@ -649,6 +654,7 @@ p {
   position: relative;
   width: 30px;
   align-self: flex-end;
+  flex-shrink: 0;
 }
 
 .popup-close::before,
@@ -676,6 +682,7 @@ p {
   width: 100%;
   max-width: 330px;
   height: 600px;
+  flex-shrink: 0;
 }
 
 .popup-title {
@@ -789,18 +796,17 @@ p {
 
 @media (max-width: 640px) and (orientation: landscape) {
 
-  .trends {
+  .trend-wrap {
     display: flex;
     flex-wrap: wrap;
   }
 
   .trend {
-    width: calc(50% - 1.5px);
-    margin-right: 3px;
+    width: calc(50% - 1.5px);   
   }
 
-  .trend:nth-child(even) {
-    margin-right: 0;
+  .trend:nth-child(odd) {
+    margin-right: 3px;
   }
 
   .product-picture-img {
@@ -812,7 +818,7 @@ p {
 
 @media (min-width: 641px) {
 
-  .trends {
+  .trend-wrap {
     display: flex;
     flex-wrap: wrap;
   }
@@ -821,19 +827,19 @@ p {
     width: calc(50% - 1.5px);
   }
 
-  .trend:nth-child(even) {
+  .trend:nth-child(odd) {
     margin-right: 3px;
   }
 
   @media (orientation: landscape) {
 
-    .trends>.trend {
+    .trend-wrap>.trend {
       height: 320px;
-      width: calc(25% - 3px);
+      width: calc(25% - 2.25px);
       margin: 0 0 0 0;
     }
 
-    .trend:nth-child(n+3) {
+    .trend:nth-child(n+2) {
       margin-left: 3px;
     }
   }
@@ -898,7 +904,7 @@ p {
   }
 
   .post-list {
-    width: 56%;
+    margin-right: 35px;
   }
 
   .news-img {
@@ -910,7 +916,8 @@ p {
   }
 
   .aside {
-    width: 39%;
+    width: 270px;
+    flex-shrink: 0;
   }
 
   .shop {
@@ -978,7 +985,8 @@ p {
 
   .page,
   .shop,
-  .header-menu {
+  .header-menu
+  ,footer {
     max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
@@ -1056,5 +1064,5 @@ p {
   .news-line:before {
     display: none;
   }
-
+  
 }

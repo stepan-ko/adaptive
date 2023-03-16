@@ -60,68 +60,69 @@
 
   <section class="trends">
     <h2 class="title-line title">Сейчас в тренде</h2>
-    <article class="trend trend-1">
-      <div class="trend-text">
-        <ul class="trend-tegs">
-          <li class="trend-teg-item">
-            <a class="trend-teg-link" href="#0">lifestyle</a>
-          </li>
-          <li class="trend-teg-item">
-            <a class="trend-teg-link" href="#0">interior</a>
-          </li>
-        </ul>
-        <h3 class="trend-title">
-          <a class="trend-title-link" href="#0">сейчас в тренде: сад на подоконнике</a>
-        </h3>
-      </div>
-    </article>
-
-    <article class="trend trend-2">
-      <div class="trend-text">
-        <ul class="trend-tegs">
-          <li class="trend-teg-item">
-            <a class="trend-teg-link" href="#0">Food</a>
-          </li>
-        </ul>
-        <h3 class="trend-title">
-          <a class="trend-title-link" href="#0">сыры на красивых картинках из интернета: какие они на
-            вкус?</a>
-        </h3>
-      </div>
-    </article>
-
-    <article class="trend trend-3">
-      <div class="trend-text">
-        <ul class="trend-tegs">
-          <li class="trend-teg-item">
-            <a class="trend-teg-link" href="#0">lifestyle</a>
-          </li>
-          <li class="trend-teg-item">
-            <a class="trend-teg-link" href="#0"> travel</a>
-          </li>
-        </ul>
-        <h3 class="trend-title">
-          <a class="trend-title-link" href="#0">собираемся в первый поход в горы</a>
-        </h3>
-      </div>
-    </article>
-
-    <article class="trend trend-4">
-      <div class="trend-text">
-        <ul class="trend-tegs">
-          <li class="trend-teg-item">
-            <a class="trend-teg-link" href="#0">food</a>
-          </li>
-          <li class="trend-teg-item">
-            <a class="trend-teg-link" href="#0">health</a>
-          </li>
-        </ul>
-        <h3 class="trend-title">
-          <a class="trend-title-link" href="#0">сейчас в тренде: сколько витамина с в лимоне</a>
-        </h3>
-      </div>
-    </article>
-
+    <div class="trend-wrap">
+      <article class="trend trend-1">
+        <div class="trend-text">
+          <ul class="trend-tegs">
+            <li class="trend-teg-item">
+              <a class="trend-teg-link" href="#0">lifestyle</a>
+            </li>
+            <li class="trend-teg-item">
+              <a class="trend-teg-link" href="#0">interior</a>
+            </li>
+          </ul>
+          <h3 class="trend-title">
+            <a class="trend-title-link" href="#0">сейчас в тренде: сад на подоконнике</a>
+          </h3>
+        </div>
+      </article>
+  
+      <article class="trend trend-2">
+        <div class="trend-text">
+          <ul class="trend-tegs">
+            <li class="trend-teg-item">
+              <a class="trend-teg-link" href="#0">Food</a>
+            </li>
+          </ul>
+          <h3 class="trend-title">
+            <a class="trend-title-link" href="#0">сыры на красивых картинках из интернета: какие они на
+              вкус?</a>
+          </h3>
+        </div>
+      </article>
+  
+      <article class="trend trend-3">
+        <div class="trend-text">
+          <ul class="trend-tegs">
+            <li class="trend-teg-item">
+              <a class="trend-teg-link" href="#0">lifestyle</a>
+            </li>
+            <li class="trend-teg-item">
+              <a class="trend-teg-link" href="#0"> travel</a>
+            </li>
+          </ul>
+          <h3 class="trend-title">
+            <a class="trend-title-link" href="#0">собираемся в первый поход в горы</a>
+          </h3>
+        </div>
+      </article>
+  
+      <article class="trend trend-4">
+        <div class="trend-text">
+          <ul class="trend-tegs">
+            <li class="trend-teg-item">
+              <a class="trend-teg-link" href="#0">food</a>
+            </li>
+            <li class="trend-teg-item">
+              <a class="trend-teg-link" href="#0">health</a>
+            </li>
+          </ul>
+          <h3 class="trend-title">
+            <a class="trend-title-link" href="#0">сейчас в тренде: сколько витамина с в лимоне</a>
+          </h3>
+        </div>
+      </article>
+    </div>
   </section>
 
 
@@ -536,11 +537,20 @@
   </section>
 
   <footer class="footer">
-    <div class="social">
-      <a href="" class="social-icon"><img src="./svg/001-dribbble.svg" alt="Иконка dribbble"></a>
-      <a href="" class="social-icon"><img src="./svg/001-pinterest.svg" alt="Иконка pinterest"></a>
-      <a href="" class="social-icon"><img src="./svg/003-tumblr.svg" alt="Иконка tumblr"></a>
-    </div>
+    <address>
+      <ul class="social">
+        <li class="social-icon">
+          <a href=""><img src="./svg/001-dribbble.svg" alt="Иконка dribbble"></a>
+        </li>
+        <li class="social-icon">
+          <a href=""><img src="./svg/001-pinterest.svg" alt="Иконка pinterest"></a>
+        </li>
+        <li class="social-icon">
+          <a href=""><img src="./svg/003-tumblr.svg" alt="Иконка tumblr"></a>
+        </li>
+      </ul>
+    </address>
+    
     <div class="copyrights">
       <a href="#0" class="copyrights-link"> Copyright © 2009–2019 City Blog LLC. </a>
     </div>
@@ -565,7 +575,7 @@
         <div class="radio-groupe">
           <label>
             <span class="visually-hidden">Радиокнопка ответ Да</span>
-            <input class="form-radio" type="radio" name="radio" value="1">
+            <input class="form-radio" type="radio" name="radio" value="1" checked>
             <span class="form-radio-text">Да</span>
           </label>
           <label>
@@ -583,6 +593,15 @@
       </form>
     </div>
   </div>
+
+  
+  <script>    
+    //скрыть попап окно
+    let close = document.querySelector(".popup-close")
+    close.onclick = () => {
+      document.querySelector(".popup").classList.add('_hidden');      
+    }
+  </script>
 
 </body>
 
