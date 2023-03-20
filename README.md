@@ -1,7 +1,7 @@
 <h2>Верстка страницы по макету Adobe Photoshop</h2> 
 
 <p>Просмотр сайта доступен по ссылке: <a href="https://stepan-ko.github.io/adaptive/">https://stepan-ko.github.io/adaptive/</a></p>
-<p>Используется:</p>
+<p>Применяется:</p>
 <ul>  
   <li>Принцип Mobile First</li>
   <li>Адаптивная и резиновая верстка</li>
