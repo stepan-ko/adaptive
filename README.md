@@ -1,4 +1,4 @@
-<h2>Верстка страницы по макету Adobe Photoshop</h2> 
+# Верстка страницы по макету Adobe Photoshop
 
 <p>Просмотр сайта доступен по ссылке: <a href="https://stepan-ko.github.io/adaptive/">https://stepan-ko.github.io/adaptive/</a></p>
 <p>Применил на практике:</p>
@@ -10,4 +10,9 @@
   <li>Валидация кода html и css</li>
   <li>Верстка Pixel Perfect (+- 5px)</li>
 </ul>
+
+Макеты сайта для различных экранов выглядят так:
+
+![Layout](img/layouts.jpg)
+
 <p>Мой профиль <a href="https://github.com/stepan-ko/">https://github.com/stepan-ko/</a>
