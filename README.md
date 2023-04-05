@@ -13,6 +13,6 @@
 
 Макеты сайта для различных экранов выглядят так:
 
-![Layout](img/layouts.jpg)
+![Layout](./layouts.jpg)
 
 <p>Мой профиль <a href="https://github.com/stepan-ko/">https://github.com/stepan-ko/</a>
